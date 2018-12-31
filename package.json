@@ -1,0 +1,31 @@
+{
+  "name": "sms-management",
+  "version": "1.0.0",
+  "description": "An SMS management API that models the relationship between a contact and the SMS they send or receive. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuchodeveloper/sms-management.git"
+  },
+  "keywords": [
+    "nodejs",
+    "backend",
+    "open",
+    "source",
+    "sms"
+  ],
+  "author": "Fredrick Mgbeoma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fuchodeveloper/sms-management/issues"
+  },
+  "homepage": "https://github.com/fuchodeveloper/sms-management#readme",
+  "dependencies": {
+    "pg": "^7.7.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.42.0"
+  }
+}
