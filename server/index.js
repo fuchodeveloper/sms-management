@@ -1,3 +1,4 @@
+import path from 'path';
 import express from 'express';
 import bodyParser from 'body-parser';
 import { createContact } from './controllers/contactController';
@@ -9,6 +10,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 const port = parseInt(process.env.PORT, 10) || 8080;
+
+// project documentation
+app.use(
+  '/docs',
+  express.static(path.join(path.dirname(__dirname), 'docs'))
+);
 
 app.post('/api/v1/contact/create', createContact)
 
